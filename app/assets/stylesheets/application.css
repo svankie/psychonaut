@@ -11,3 +11,65 @@
  *= require_self
  *= require_tree .
  */
+
+header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+/* XXX: perhaps sections in general are like this. */
+section#trips, section#search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header > h1 {
+  margin: 5px auto 5px auto;
+  font-size: 72px;
+  color: crimson;
+}
+
+h2 {
+  margin-bottom: 2.5px;
+  font-weight: bold;
+  color: aqua;
+  font-size: 32px;
+}
+
+h2 > a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 > a:visited {
+  color: #CF3A64;
+  background-color: ivory;
+}
+
+h2 > a:hover {
+  color: skyblue;
+  background-color: beige;
+}
+
+div.report {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+div.report  h1 {
+  margin-bottom: -20px;
+}
+
+div.story {
+  margin-bottom: 20px;
+}

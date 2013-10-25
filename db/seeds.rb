@@ -10,14 +10,14 @@
 
 experiences = [
   {
-    title: "Melting into Eternity",
+    title: "Fundiéndome Con La Eternidad",
     pseudonym: "svankie",
     substance: "LSD",
     dose: "200ug",
     votes: 3,
     happened_at: 3.weeks.ago.to_date,
     email: "svankie@gmail.com",
-    report: "Woooo drugz are cool."
+    report: "La verdad es que realmente me fundí con la eternidad."
   },
   {
     title: "Un Verdadero Adversario",
@@ -27,10 +27,10 @@ experiences = [
     votes: 5,
     happened_at: 10.weeks.ago.to_date,
     email: "martin.bove@hotmail.com",
-    report: "I've reached the uttermost layer of reality."
+    report: "Atravesé la última capa de la realidad."
   },
   {
-    title: "Someone Please Help Me",
+    title: "Alguien Por Favor Ayúdeme",
     pseudonym: "jpkakkaroto",
     substance: "Cannabis",
     dose: "2 fat joints",

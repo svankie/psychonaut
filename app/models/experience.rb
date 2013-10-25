@@ -6,13 +6,9 @@ class Experience < ActiveRecord::Base
   friendly_id :title, use: :slugged
 
   def self.search(params)
-    qstring = "*#{params[:query]}*"
+    query = "*#{params[:query]}*"
     tire.search() do
-      query { string qstring }
-
-      facet 'substances' do
-        terms :substance
-      end
+      query { string query }
 
       sort { by :happened_at, 'desc' }
     end

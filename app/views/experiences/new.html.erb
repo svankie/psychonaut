@@ -1,0 +1,32 @@
+<% if flash[:alert] %>
+  <p><%= flash[:alert] %></p>
+<% end %>
+
+<section id="new-trip">
+	<h1>nuevo trip report[<%= link_to "?", "#", :title => "un trip report es el relato de tu experiencia" %>]</h1>
+	<%= form_for @experience, url: { action: "create" } do |f| %>
+	  <%= f.label :title, "título" %>
+	  <%= f.text_field :title %>
+	  
+	  <%= f.label :pseudonym, "seudónimo" %>
+	  <%= f.text_field :pseudonym %>
+	  
+	  <%= f.label :substance, "sustancia" %>
+	  <%= f.text_field :substance %>
+	  
+	  <%= f.label :dose, "dosis" %>
+	  <%= f.text_field :dose %>
+	  
+	  <%= f.label :happened_at, "pasó en" %>
+	  <%= f.date_field :happened_at %>
+	  
+	  <%= f.label :report, "trip report" %>
+    <%= f.text_area :report, :class => "tinymce", :rows => 20, :cols => 80 %>
+
+    <%= recaptcha_tags %>
+
+	  <%= f.submit "Enviar" %>
+	<% end %>
+</section>
+
+<%= tinymce %>
