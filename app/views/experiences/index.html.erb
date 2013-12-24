@@ -1,1 +1,21 @@
+<section id="search">
+  <%= form_tag experiences_path, method: :get do -%>
+    <p>
+      <%= text_field_tag :query, params[:query] -%>
+      <%= submit_tag "Buscar" -%>
+    </p>
+  <%- end -%>
+</section>
 
+<section id="experiences">
+  <% @experiences.each do |experience| -%>
+  <article>
+    <h2><%= link_to experience.title, experience -%></h2>
+    <div class="info">
+      le pasó a <strong><%= experience.pseudonym -%></strong>
+      con <strong><%= experience.substance -%></strong>
+    </div>
+  </article>
+  <%- end -%>
+  <%= will_paginate @experiences -%>
+</section>
